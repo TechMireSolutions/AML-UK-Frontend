@@ -20,14 +20,14 @@ const Home = () => {
 
           {/* Description Card */}
           <div className="animate-slideUp bg-white/80 backdrop-blur-lg p-6 sm:p-8 rounded-2xl shadow-xl border border-white/20 mb-8 sm:mb-10 md:mb-12 relative overflow-hidden" style={{ animationDelay: "0.2s" }}>
-            <div className="absolute top-0 right-0 w-24 h-24 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-            
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed relative z-10">
-              Welcome to the official <strong className="text-indigo-600">Anti-Money Laundering</strong> and <strong className="text-purple-600">Countering the Financing of Terrorism</strong> certification exam system. 
-              Achieve <span className="text-green-600 font-semibold">80% or higher</span> to receive your certificate.
-            </p>
-          </div>
+  <div className="absolute top-0 right-0 w-24 h-24 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+  <div className="absolute bottom-0 left-0 w-24 h-24 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+  
+  <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed relative z-10">
+    This platform is for the <strong className="text-indigo-600">mandatory AML/CFT certification assessment</strong> for staff of the Trinidad and Tobago Police Credit Union (TTPCU). 
+    Achieve <strong className="text-green-600 font-semibold">80% or higher</strong> to earn your certificate.
+  </p>
+</div>
 
           {/* Action Buttons */}
           <div className="space-y-4 sm:space-y-6 animate-slideUp" style={{ animationDelay: "0.4s" }}>
