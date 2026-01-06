@@ -83,19 +83,24 @@ const ResultPage = () => {
 
             {/* Message Box */}
             {isPassed ? (
-              <div className="animate-slideUp bg-linear-to-r from-green-50 to-emerald-50 border-2 border-green-400 text-green-700 px-4 sm:px-6 md:px-8 py-4 sm:py-6 rounded-2xl mb-6 sm:mb-8 shadow-lg" style={{ animationDelay: "0.4s" }}>
-                <div className="flex items-start justify-center mb-3">
-                  <svg className="w-6 h-6 sm:w-8 sm:h-8 mr-2 shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <p className="text-lg sm:text-xl font-semibold">
-                    Congratulations! Your certificate has been downloaded automatically.
-                  </p>
-                </div>
-                <p className="mt-3 sm:mt-4 text-sm sm:text-base">
-                  Check your downloads folder for <strong className="text-green-800">AML_CFT_Certificate_{candidateName || "Candidate"}.pdf</strong>
-                </p>
-              </div>
+             <div className="animate-slideUp bg-linear-to-r from-green-50 to-emerald-50 border-2 border-green-400 text-green-700 px-4 sm:px-6 md:px-8 py-4 sm:py-6 rounded-2xl mb-6 sm:mb-8 shadow-lg" style={{ animationDelay: "0.4s" }}>
+  <div className="flex items-start justify-center mb-3">
+    <svg className="w-6 h-6 sm:w-8 sm:h-8 mr-2 shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
+      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+    </svg>
+    <p className="text-lg sm:text-xl font-semibold">
+      Congratulations! Your certificate has been downloaded automatically.
+    </p>
+  </div>
+  
+  <p className="mt-3 sm:mt-4 text-sm sm:text-base">
+    Check your downloads folder for <strong className="text-green-800">AML_CFT_Certificate_{candidateName || "Candidate"}.pdf</strong>
+  </p>
+  
+  <p className="mt-3 sm:mt-4 text-sm sm:text-base italic text-green-800">
+    Please wait a little for processing of certificate. Thanks!
+  </p>
+</div>
             ) : (
               <div className="animate-slideUp bg-linear-to-r from-red-50 to-rose-50 border-2 border-red-400 text-red-700 px-4 sm:px-6 md:px-8 py-4 sm:py-6 rounded-2xl mb-6 sm:mb-8 shadow-lg" style={{ animationDelay: "0.4s" }}>
                 <p className="text-base sm:text-lg md:text-xl font-medium">

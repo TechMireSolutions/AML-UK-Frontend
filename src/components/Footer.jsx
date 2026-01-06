@@ -11,16 +11,25 @@ const Footer = () => {
           <div className="h-px w-16 bg-linear-to-r from-transparent via-blue-400 to-transparent"></div>
         </div>
         
-        <p className="text-sm sm:text-base text-gray-300 font-medium">
+        <p className="text-sm sm:text-base text-gray-300 font-medium mb-4">
           &copy; 2026 AML/CFT Certification System. All rights reserved.
         </p>
         
-        <div className="mt-4 flex justify-center space-x-4 text-xs sm:text-sm text-gray-400">
-          <span className="hover:text-blue-400 transition-colors duration-300 cursor-pointer">Privacy</span>
-          <span>•</span>
-          <span className="hover:text-blue-400 transition-colors duration-300 cursor-pointer">Terms</span>
-          <span>•</span>
-          <span className="hover:text-blue-400 transition-colors duration-300 cursor-pointer">Contact</span>
+        <div className="mt-4 flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 text-xs sm:text-sm text-gray-400">
+          <div className="flex items-center gap-4">
+            <a href="mailto:Tech@morphemestudios.com" className="hover:text-blue-400 transition-colors duration-300">
+              Tech@morphemestudios.com
+            </a>
+            <span className="hidden sm:inline">•</span>
+          </div>
+          
+          <div className="flex items-center gap-4">
+            <span className="hover:text-blue-400 transition-colors duration-300 cursor-pointer">Privacy</span>
+            <span>•</span>
+            <span className="hover:text-blue-400 transition-colors duration-300 cursor-pointer">Terms</span>
+            <span>•</span>
+            <span className="hover:text-blue-400 transition-colors duration-300 cursor-pointer">Contact</span>
+          </div>
         </div>
       </div>
     </footer>
