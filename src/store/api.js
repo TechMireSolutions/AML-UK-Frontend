@@ -3,7 +3,7 @@ import { useAuthStore } from "./authStore";
 
 // Create an Axios instance with base URL from environment variable
 const api = axios.create({
-baseURL: import.meta.env.VITE_BACKEND_URL || "https://amlassesment.techmiresolutions.com",
+baseURL: import.meta.env.VITE_BACKEND_URL || "https://amlback.techmiresolutions.com",
 });
 
 // Auto-add Bearer token to every request
